@@ -4,7 +4,7 @@
 
 appMobileSwipe.controller("swipe", ["$scope", function($scope){
 
-    $scope.images = ["image1", "image2", "image3", "image4", "image5"];
+    $scope.images = ["image1", "image2", "image3", "image4", "image5", "image6", "image7", "image8", "image9"];
     $scope.img = $scope.images[0];
     $scope.lenImg = $scope.images.length ;
 
