@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es" ng-app="mobileSwipe">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Mobile swipe </title>
+
+<!--
+    adding angular to project
+-->
+    <script src="node_modules/angular/angular.js"></script>
+
+
+<!--
+    adding angular-library > angular-touch
+-->
+    <script src="node_modules/angular-touch/angular-touch.min.js"></script>
+
+
+<!--
+    adding angular-config to project > config.js
+-->
+    <script src="public/js/angular-config/config.js"></script>
+
+
+
+
+<!--
+    adding controllers to project > config.js
+-->
+    <script src="public/js/controller/controller-swipe.js"></script>
+
+
+
+<!--
+    styles css
+-->
+    <link rel="stylesheet" href="public/css/main.css">
+
+
+</head>
+<body>
+
+
+    <section ng-controller="swipe" id="container__images--js" class="container__images">
+
+        <img class="item--images"
+             ng-src="public/images/{{img}}.jpg" ng-swipe-right="swipeRight()"
+             ng-swipe-left="swipeLeft()" />
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
