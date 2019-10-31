@@ -1,0 +1,9 @@
+.container__images{
+    display:flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.item--images{
+    width: inherit;
+}
