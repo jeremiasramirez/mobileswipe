@@ -9,7 +9,7 @@ appMobileSwipe.controller("swipe", ["$scope", function($scope){
     $scope.lenImg = $scope.images.length ;
 
     /*
-    * counter of position -images
+    * counter of position -images | pagination
     * */
     $scope.counterImg = 0;
     $scope.counterPosition = 1;
@@ -17,12 +17,16 @@ appMobileSwipe.controller("swipe", ["$scope", function($scope){
     // if swipe right
 
     $scope.swipeRight = function(){
+        //verifying if pagination is > to zero
 
-
-        if($scope.counterImg > 0){
+        if( ($scope.counterImg > 0) ){
+    /*
+    * << back pagination <<
+    * */
             $scope.counterImg -= 1;
             $scope.counterPosition -= 1;
             $scope.img = $scope.images[$scope.counterImg];
+
         }
 
     };
@@ -31,10 +35,12 @@ appMobileSwipe.controller("swipe", ["$scope", function($scope){
     //if swipe left
     $scope.swipeLeft = function(){
 
-        if($scope.counterImg < $scope.images.length -1){
+        if( ($scope.counterImg) < ($scope.images.length -1) ){
+
             $scope.counterImg += 1;
             $scope.counterPosition +=1;
             $scope.img = $scope.images[$scope.counterImg];
+
         }
 
 
