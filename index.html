@@ -38,22 +38,33 @@
 <!--
     styles css
 -->
-    <link rel="stylesheet" href="public/css/main.css">
 
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/lib/jeremias-lib/jeremias-lib.css">
 
 </head>
-<body>
+<body  ng-controller="swipe" class="blurtime">
+    <div class="menu--white">
+       <p class="title letter4">Swipe angularJS</p>
+    </div>
 
 
-    <section ng-controller="swipe" id="container__images--js" class="container__images">
+
+    <section id="container__images--js" class="container__images">
 
         <img class="item--images"
-             ng-src="public/images/{{img}}.jpg" ng-swipe-right="swipeRight()"
-             ng-swipe-left="swipeLeft()" />
+             ng-src="public/images/{{img}}.jpg"
+             ng-swipe-right="swipeRight()"
+             ng-swipe-left="swipeLeft()"
+        />
+
 
     </section>
 
-
+    <div>
+        <p class="alert--success large" ng-swipe-right="swipeRight()"
+           ng-swipe-left="swipeLeft()">{{counterPosition + " de " + lenImg}} </p>
+    </div>
 
 
 

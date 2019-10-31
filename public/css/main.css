@@ -1,9 +1,51 @@
-.container__images{
-    display:flex;
-    width: 100%;
-    overflow-x: hidden;
-}
+body{
+    margin:0;
+    padding:0;
 
-.item--images{
-    width: inherit;
 }
+@media screen and (max-width: 700px){
+
+    .container__images{
+        display:flex;
+        background-color: white;
+        transform: scale(.9);
+        width: 100%;
+        overflow-x: hidden;
+        height: 270px;
+    }
+
+    .item--images{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 350px){
+
+    .container__images{
+        display:flex;
+        transform: scale(.9);
+        width: 100%;
+        overflow-x: hidden;
+        height: 200px;
+    }
+
+    .item--images{
+        width: 100%;
+        height: 100%;
+    }
+}
+/*@media screen and (max-width: 900px){*/
+
+/*    .container__images{*/
+/*        display:flex;*/
+/*        transform: scale(.9);*/
+/*        width: 100%;*/
+/*        overflow-x: hidden;*/
+/*        height: 500px;*/
+/*    }*/
+
+/*    .item--images{*/
+/*        width: 100%;*/
+/*        height: 100%;*/
+/*    }*/
+/*}*/
