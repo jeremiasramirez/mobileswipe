@@ -1,2 +1,2 @@
 # mobileswipe
-swipe de imagenes en dispositivos moviles.
+swipe de imagenes en dispositivos moviles utilizando angularJS.
