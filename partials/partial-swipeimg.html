@@ -5,12 +5,13 @@
 
 
 <section id="container__images--js" class="container__images transition"/>
-<img class="item--images transition"
-
-     ng-src="public/images/{{img}}.jpg"
-     ng-swipe-right="swipeRight()"
-     ng-swipe-left="swipeLeft()"
-/>
+    <img
+          class="item--images transition"
+          ng-src="public/images/{{img}}.jpg"
+          ng-swipe-right="swipeRight()"
+          ng-swipe-left="swipeLeft()"
+          ng-click="createTemplate(img)"
+    />
 
 
 </section>

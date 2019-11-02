@@ -26,6 +26,7 @@ appMobileSwipe.controller("swipe", ["$scope", function($scope){
     $scope.swipeRight = function(){
         //verifying if pagination is > to zero
 
+
         if( ($scope.counterImg > 0) ){
     /*
     * << back pagination <<
@@ -64,8 +65,7 @@ appMobileSwipe.controller("swipe", ["$scope", function($scope){
         }
 
 
-    }
-
+    };
 
 
 }]);

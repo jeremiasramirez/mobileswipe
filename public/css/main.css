@@ -20,7 +20,23 @@ body{
     }
 }
 @media screen and (max-width: 350px){
+    /*.parentTemplate{*/
+    /*    background-color: rgba(1%,1%,1%, 70%);*/
+    /*    position: absolute;*/
+    /*    top: 0;*/
+    /*    width: 100vw;*/
+    /*    height: 100vh;*/
+    /*    margin:0 0 0 -1.6px;*/
+    /*    padding-top: 2em;*/
 
+
+    /*}*/
+    /*.item--images2{*/
+    /*    width: 100%;*/
+    /*    transform: scale(.9);*/
+    /*    margin:0 -2px;*/
+
+    /*}*/
     .container__images{
         display:flex;
         transform: scale(.9);
@@ -43,5 +59,6 @@ body{
     to{
         transform: translateY(-1px);
     }
+
 
 }
