@@ -44,29 +44,10 @@
 
 </head>
 <body  ng-controller="swipe" class="blurtime">
-    <div class="menu--white">
-       <p class="title letter4">Swipe angularJS</p>
+
+    <div ng-include="includeSwipeImg">
+
     </div>
-
-
-
-    <section id="container__images--js" class="container__images">
-
-        <img class="item--images"
-             ng-src="public/images/{{img}}.jpg"
-             ng-swipe-right="swipeRight()"
-             ng-swipe-left="swipeLeft()"
-        />
-
-
-    </section>
-
-    <div>
-        <p class="alert--success large" ng-swipe-right="swipeRight()"
-           ng-swipe-left="swipeLeft()">{{counterPosition + " de " + lenImg}} </p>
-    </div>
-
-
 
 
 
